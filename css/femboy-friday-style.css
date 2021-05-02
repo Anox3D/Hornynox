@@ -1,0 +1,22 @@
+p.not-friday {
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+}
+
+div#video {
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+input {
+    width: 703.5px;
+    display: block;
+}
+
+p.share-video {
+    font-size: 20px;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}

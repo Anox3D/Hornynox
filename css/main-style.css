@@ -1,0 +1,25 @@
+body {
+    background-color: #181a1b;
+}
+
+a#header {
+    font-size: 55px;
+    font-weight: bolder;
+    color: #ff57ff;
+    text-decoration: none;
+    margin-left: 105px;
+    margin-top: 60px;
+    display: block;
+}
+
+a.homepage {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 50px;
+    display: block;
+}
+
+a.homepage:hover {
+    text-decoration: underline;
+}

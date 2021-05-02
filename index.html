@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Hornynox</title>
+        <!-- Open Graph Protocol -->
+        <meta name="og:title" content="Hornynox">
+        <meta name="og:description" content="Anox may be horny.">
+        <!-- Styles -->
+        <link href="/css/main-style.css" rel="stylesheet">
+        <link href="/css/index-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="/" id="header"></a>
+        <ul>
+            <li><a href="/femboyfriday">Femboy Friday</a></li>
+            <li><a href="/technologic">Technologic</a></li>
+            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+        </ul>
+        <!-- Script -->
+        <script>
+            // Random header
+            const headers = ["ANOX IS HORNY", "Anox may be horny.", "Anox is not horny.", "Anox isn't horny at all.", "ANOX IS HORNY AF!!", "Anox is both horny and not horny."];
+            const random = Math.floor(Math.random() * headers.length);
+            
+            document.getElementById("header").innerHTML = `${random, headers[random]}`;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Hornynox - Technologic</title>
+        <!-- Open Graph Protocol -->
+        <meta name="og:title" content="Hornynox - Technologic">
+        <meta name="og:description" content="Buy it, use it, break it, fix it, trash it, change it, mail, upgrade it, charge it, point it, zoom it, press it, snap it, work it, quick erase it...">
+        <!-- Style -->
+        <link href="/css/technologic-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="text"></div>
+
+        <!-- Scripts -->
+        <script>
+            // Text changer
+            const texts = ["Buy it", "use it", "break it", "fix it", "trash it", "change it", "mail", "upgrade it", "Charge it", "point it",
+                           "zoom it", "press it", "snap it", "work it", "quick", "erase it", "Write it", "cut it", "paste it", "save it",
+                           "load it", "check it", "quick", "rewrite it", "Plug it", "play it", "burn it", "rip it", "drag it", "drop it",
+                           "zip", "unzip it", "Lock it", "fill it", "call it", "find it", "view it", "code it", "jam", "unlock it",
+                           "Surf it", "scroll it", "pause it", "click it", "cross it", "crack it", "switch", "update it", "Name it", "read it",
+                           "tune it", "print it", "scan it", "send it", "fax", "rename it", "Touch it", "bring it", "pay it", "watch it",
+                           "turn it", "leave it", "stop", "format it"
+                        ];
+
+            var counter = 0;
+            const inst = setInterval(changeText, 462);
+
+            function changeText(){
+                document.getElementById("text").innerHTML = texts[counter];
+                counter++;
+
+                if(counter >= texts.lenght){
+                    counter = 0;
+                }
+            }
+        </script>
+        <script>
+            // Audio player
+            const audio = new Audio("/audio/technologic.mp3");
+
+            if(typeof audio.loop == 'boolean'){
+                audio.loop = true
+            } else {
+                audio.addEventListener('ended', function(){
+                    this.currentTime = 0;
+                    this.play();
+                }, false);
+            }
+            
+            audio.play();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Hornynox - Femboy Friday</title>
+        <!-- Open Graph Protocol -->
+        <meta name="og:title" content="Hornynox - Femboy Friday">
+        <meta name="og:description" content="Celebrate the femboy Friday with Hornynox.">
+        <!-- Styles -->
+        <link href="/css/main-style.css" rel="stylesheet">
+        <link href="/css/femboy-friday-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content"></div>
+        <a href="/" class="homepage">← Take me back to homepage</a>
+        
+        <!-- Script -->
+        <script>
+            const videos = ['<video src="/videos/whenitsfemboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/whenitsfemboyfriday.mp4">',
+                            '<video src="/videos/femboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/femboyfriday.mp4">'
+                        ];
+
+            const update = () => {
+                const contentElement = document.getElementById("content")
+                const day = new Date().getDay()
+
+                if (day !== 5)
+                    contentElement.innerHTML = '<p class="not-friday">What were you trying to do? It\'s not Friday then.</p>'
+                else {
+                    contentElement.innerHTML = '<a href="/femboyfriday" id="header">Femboy Friday</a><div id="video"></div>'
+                    document.getElementById("video").innerHTML = `${(random, videos[Math.floor(Math.random() * videos.length)])}`
+                }
+            }
+
+            const random = (window.onload = () => {
+                update()
+                setInterval(update, 60000)
+            });
+        </script>
+    </body>
+</html>
