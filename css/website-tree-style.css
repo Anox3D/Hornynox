@@ -1,0 +1,17 @@
+div.tree {
+    font-size: 20px;
+    color: white;
+    margin-top: 85px;
+    margin-left: 135px;
+    margin-bottom: 85px;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
