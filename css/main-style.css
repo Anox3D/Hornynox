@@ -23,3 +23,11 @@ a.homepage {
 a.homepage:hover {
     text-decoration: underline;
 }
+
+p {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin: 50px;
+    display: block;
+}
