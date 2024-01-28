@@ -14,8 +14,8 @@
         <meta name="og:video:width" content="854">
         <meta name="og:video:height" content="480">
         <!-- Styles -->
-        <link href="/css/main-style.css" rel="stylesheet">
-        <link href="/css/femboy-friday-style.css" rel="stylesheet">
+        <link href="./css/main-style.css" rel="stylesheet">
+        <link href="./css/femboy-friday-style.css" rel="stylesheet">
     </head>
     <body>
         <div id="content"></div>
@@ -23,9 +23,9 @@
         
         <!-- Script -->
         <script>
-            const videos = ['<video src="/videos/whenitsfemboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/whenitsfemboyfriday.mp4" readonly>',
-                            '<video src="/videos/femboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/femboyfriday.mp4" readonly>',
-                            '<video src="/videos/itsfemboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/itsfemboyfriday.mp4" readonly>'
+            const videos = ['<video src="./videos/whenitsfemboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/whenitsfemboyfriday.mp4" readonly>',
+                            '<video src="./videos/femboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/femboyfriday.mp4" readonly>',
+                            '<video src="./videos/itsfemboyfriday.mp4" height="400" controls autoplay></video><p class="share-video">Share it with your friends:</p><input type="text" name="video-url" value="http://hornynox.com/videos/itsfemboyfriday.mp4" readonly>'
                         ];
 
             const update = () => {
@@ -35,7 +35,7 @@
                 if (day !== 5)
                     contentElement.innerHTML = '<p class="not-friday">What were you trying to do? It\'s not Friday then.</p>'
                 else {
-                    contentElement.innerHTML = '<a href="/femboyfriday" id="header">Femboy Friday</a><div id="video"></div>'
+                    contentElement.innerHTML = '<a href="./femboyfriday" id="header">Femboy Friday</a><div id="video"></div>'
                     document.getElementById("video").innerHTML = `${(random, videos[Math.floor(Math.random() * videos.length)])}`
                 }
             }
